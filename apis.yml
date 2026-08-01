@@ -1,7 +1,29 @@
 aid: spike
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spike.png
 name: Spike
-description: Spike is a company surfaced as a portfolio company of insight-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Spike is an AI-powered email and team collaboration platform that turns
+  standard email accounts (Gmail, Outlook, IMAP) into a chat-like, conversational
+  experience. Its consumer Email App reformats existing inboxes into threaded
+  conversations, while Spike Teamspace is an end-to-end email and team-chat
+  service with shared inboxes, channels, groups, collaborative docs, tasks, notes,
+  and built-in video meetings. Spike layers AI features across the inbox for smart
+  prioritization, thread summaries, and draft assistance. The company is a
+  portfolio company of Insight Partners. As of this enrichment pass Spike ships
+  consumer and team applications but publishes no public developer API, OpenAPI
+  specification, or developer portal; the profile below captures its real product,
+  security posture, and public link surface.
 url: https://raw.githubusercontent.com/api-evangelist/spike/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Email
+- Collaboration
+- Team Chat
+- Productivity
+- Communication
+- AI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,26 @@ maintainers:
 common:
 - type: Website
   url: https://www.spikenow.com/
+- type: Documentation
+  url: https://www.spikenow.com/help/
+- type: Support
+  url: https://www.spikenow.com/help/
+- type: Blog
+  url: https://www.spikenow.com/blog/
+- type: Pricing
+  url: https://www.spikenow.com/pricing/
+- type: PrivacyPolicy
+  url: https://www.spikenow.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.spikenow.com/terms-and-conditions/
+- type: Security
+  url: https://www.spikenow.com/security/
+- type: VulnerabilityDisclosure
+  url: security/spike-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/spike-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
