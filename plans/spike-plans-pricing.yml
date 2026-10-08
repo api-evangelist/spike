@@ -1,0 +1,76 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.spikenow.com/pricing/
+sources:
+- https://www.spikenow.com/pricing/
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: per-seat
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+  managed_tier: Team
+published: true
+note: Two product lines (Teamspace and Email App) with per-member/per-user tiers; AI query caps on free
+  tiers; enterprise is negotiated.
+plan_count: 7
+currency: USD
+plans:
+- name: Teamspace Starter
+  price_text: Free
+  period: month
+  unit: per member
+  included_quota: Up to 3 members, 1 teamspace, free email address, 60 days of search history, 15 GB storage
+    space, Spike AI, standard support
+- name: Teamspace Team
+  price_text: $ 4 per member / month billed annually
+  price: 4
+  currency: USD
+  period: month
+  unit: per member
+  included_quota: Everything in Starter, Access to Spike AI, free custom email domain, unlimited search
+    history, 100 GB storage space, Shared Inbox
+- name: Teamspace Business
+  price_text: $ 8 per member / month billed annually
+  price: 8
+  currency: USD
+  period: month
+  unit: per member
+  included_quota: Everything in Team, 1 TB storage, video call recording, SAML-SSO, 500 MB file upload,
+    VIP support
+- name: Email App Free
+  price_text: $ 0
+  price: 0
+  currency: USD
+  period: month
+  unit: per user
+  included_quota: Smart Inbox (1 email address), 1:1 video calls, 60 days search history, 1 GB storage,
+    file upload up to 30 MB, Spike AI
+- name: Email App Pro
+  price_text: $ 6 per user / month billed annually
+  price: 6
+  currency: USD
+  period: month
+  unit: per user
+  included_quota: Up to 3 email addresses, 5 participants per video call, unlimited search history, 5
+    GB storage, 100 MB file upload, priority support
+- name: Email App Ultimate
+  price_text: $ 12 per user / month billed annually
+  price: 12
+  currency: USD
+  period: month
+  unit: per user
+  included_quota: Unlimited email addresses, 10 participants per call, unlimited search history, 20 GB
+    storage, 1GB file upload, VIP support
+- name: Enterprise
+  price_text: Contact our sales team to get a custom plan.
+  period: none
+  included_quota: For large teams
+rate_limit_statements:
+- 10 queries
+- Results are limited to the last 60 days
