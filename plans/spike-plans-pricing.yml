@@ -74,3 +74,68 @@ plans:
 rate_limit_statements:
 - 10 queries
 - Results are limited to the last 60 days
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - seat
+  - subscription
+  units:
+  - seat
+  plans:
+  - name: Teamspace Starter
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Teamspace Team
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Teamspace Business
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Email App Free
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
+  - name: Email App Pro
+    access: other
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
+  - name: Email App Ultimate
+    access: other
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
+  - name: Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
